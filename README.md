@@ -24,8 +24,8 @@ An AI-powered document analysis system that uses TinyLlama LLM to intelligently 
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd intelligent-document-analyzer
+git clone https://github.com/alamayaz/pdf-analyser
+cd pdf-analyser
 ```
 
 ### 2. Project Structure

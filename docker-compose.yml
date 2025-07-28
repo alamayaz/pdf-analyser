@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  document-analyzer:
+    build: .
+    container_name: intelligent-document-analyzer
+    volumes:
+      - ./input:/app/input:ro
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TRANSFORMERS_CACHE=/app/.cache
+      - HF_HOME=/app/.cache
+      - TOKENIZERS_PARALLELISM=false
+    mem_limit: 4g
+    cpus: 2
+    restart: "no"
